@@ -1,22 +1,25 @@
 ---
-
+import Card from "../components/Card.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<div>
-			<a href="./about">About Page</a>
-			<a href="/">Home Page</a>
-			<a href="/blog">Blog Page</a>
-		</div>
-		<h1>Astro</h1>
-		<h2>My first astro site</h2>
-	</body>
-</html>
+<MainLayout
+  title="Home Page"
+  description="This is my home page which is also pretty super cool"
+>
+  <div>
+    <a href="./about">About Page</a>
+    <a href="/">Home Page</a>
+    <a href="/blog">Blog Page</a>
+  </div>
+  <h1 class="text-3xl font-bold text-red-500">Astro</h1>
+  <div class="grid grid-cols-3 gap-10 p-10">
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+  </div>
+  <h2>My first astro site</h2>
+</MainLayout>

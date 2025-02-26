@@ -1,22 +1,13 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<div>
-			<a href="./about">About Page</a>
-			<a href="/">Home Page</a>
-            <a href="/blog">Blog Page</a>
-		</div>
-		<h1>Astro</h1>
-		<h2>My first blog page in astro site</h2>
-	</body>
-</html>
+<MainLayout title="Blog Page" description="This is my blog page">
+  <div>
+    <a href="./about">About Page</a>
+    <a href="/">Home Page</a>
+    <a href="/blog">Blog Page</a>
+  </div>
+  <h1>Astro</h1>
+  <h2>My first blog page in astro site</h2>
+</MainLayout>
